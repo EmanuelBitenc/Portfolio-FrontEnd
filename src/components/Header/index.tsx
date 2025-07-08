@@ -4,6 +4,7 @@ import github from "../../assets/icons/github.svg";
 import linkedin from "../../assets/icons/linkedin.svg";
 import dark from "../../assets/icons/dark.svg";
 import light from "../../assets/icons/light.svg";
+import { GithubPerfil, LinkedinPerfil } from "../../assets/links";
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ items-menu"
               <Links name="Contato" href="#Contato" />
             </div>
           </li>
-          <li className="title-header text-center  text-4xl font-light">
+          <li className="title-header text-center  text-4xl font-light ">
             Emanuel Bitencourt
           </li>
           <li
@@ -33,16 +34,8 @@ items-menu"
               ) : (
                 <Links name="Tema Light" image={light} />
               )}
-              <Links
-                name="Github"
-                href="https://github.com/EmanuelBitenc"
-                image={github}
-              />
-              <Links
-                name="Linkedin"
-                href="https://www.linkedin.com/in/emanuelbitencourt/"
-                image={linkedin}
-              />
+              <Links name="Github" href={GithubPerfil} image={github} />
+              <Links name="Linkedin" href={LinkedinPerfil} image={linkedin} />
             </div>
           </li>
         </ul>

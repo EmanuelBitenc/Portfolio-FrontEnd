@@ -1,0 +1,18 @@
+.items-button {
+  position: relative;
+}
+
+.items-button::after {
+  content: "";
+  height: 2px;
+  top: 30px;
+  left: 0;
+  width: 0%;
+  background-color: #fff;
+  position: absolute;
+  display: inline-block;
+  transition: width 0.3s ease-in-out;
+}
+.items-button:hover::after {
+  width: 100%;
+}

@@ -1,5 +1,6 @@
 import "./index.css";
 import Header from "./components/Header";
+import HeaderPanel from "./components/Header-Panel";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <div>
         <div className="container-header-img ">
           <Header />
-          <div className="h-[695px]"></div>
+          <HeaderPanel />
         </div>
       </div>
     </>
