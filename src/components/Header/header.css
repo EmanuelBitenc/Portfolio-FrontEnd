@@ -1,0 +1,45 @@
+.container-menu {
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.8s;
+}
+
+.container-menu li:not(.title-header) {
+  opacity: 0.5;
+  transition: opacity 0.8s;
+}
+
+.header-container:hover .container-menu {
+  background: #000;
+}
+
+.header-container:hover .container-menu li.items-menu {
+  opacity: 1;
+}
+
+.items-menu {
+  opacity: 0.5;
+  transition: opacity 0.8s;
+}
+
+.header-container:hover .items-menu {
+  opacity: 1;
+}
+
+span.links-header {
+  position: relative;
+}
+
+.links-header::after {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  content: "";
+  height: 2px;
+  display: inline-block;
+  width: 0%;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+.links-header:hover::after {
+  width: 100%;
+}
