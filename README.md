@@ -2,6 +2,8 @@
 
 ## Status do Projeto: Em Desenvolvimento
 
+https://portfolio-front-end-sepia.vercel.app
+
 Bem-vindo ao repositório do meu portfólio pessoal. Este projeto é dedicado a apresentar minha experiência e habilidades como Desenvolvedor de Software.
 
 ### ✨ Tecnologias
