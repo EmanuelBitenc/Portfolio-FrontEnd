@@ -2,24 +2,24 @@
 
 @layer base {
   :root {
-    /* Colors - Light */
     --bg: #0b0b0c;
     --fg: #f5f5f5;
-    --muted: #a1a1aa; /* zinc-400 */
+    --muted: #a1a1aa;
     --border: rgba(255, 255, 255, 0.08);
     --overlay: rgba(10, 10, 11, 0.4);
-    --accent: #ababab; /* blue-400 */
+    --accent: #10b981;
     --ring: rgba(96, 165, 250, 0.35);
   }
 
+  /* System light-mode fallback */
   @media (prefers-color-scheme: light) {
     :root {
       --bg: #ffffff;
       --fg: #0c0c0d;
-      --muted: #52525b; /* zinc-600 */
+      --muted: #52525b;
       --border: rgba(0, 0, 0, 0.08);
       --overlay: rgba(255, 255, 255, 0.4);
-      --accent: #ababab; /* blue-600 */
+      --accent: #059669;
       --ring: rgba(37, 99, 235, 0.3);
     }
   }
@@ -46,7 +46,6 @@
     color: var(--fg);
   }
 
-  /* Glass utility for translucent surfaces */
   .glass {
     background: color-mix(in oklab, var(--overlay) 60%, transparent);
     -webkit-backdrop-filter: saturate(180%) blur(12px);
@@ -58,14 +57,35 @@
 .container-header-img {
   background-image: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(0, 0, 0, 0.7) 65%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 0.9) 100%
     ),
-    url("/src/assets/images/containerHeaderImg.png");
+    url("/src/assets/images/containerHeaderImg-reverse.png");
   background-size: cover;
   background-position: center;
 }
+
 div {
   cursor: default;
+}
+
+span.links-button {
+  position: relative;
+}
+
+.links-button::after {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  content: "";
+  height: 2px;
+  display: inline-block;
+  width: 0%;
+  background-color: var(--accent);
+  transition: width 180ms ease-in-out;
+}
+.links-button:hover::after,
+.links-button:focus-visible::after {
+  width: 100%;
 }

@@ -1,16 +1,23 @@
 import "./index.css";
 import Header from "./components/Header";
 import HeaderPanel from "./components/Header-Panel";
+//import About from "./components/About";
+import Skills from "./components/Skills";
+//import Projects from "./components/Projects";
+//import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <div>
-        <div className="container-header-img ">
+        <div className="container-header-img">
           <Header />
           <HeaderPanel />
         </div>
-        <div className="w-full h-60 bg-zinc-100">continuação</div>
+        {/**<About /> */}
+        <Skills />
+        {/**<Projects />
+        <Footer /> */}
       </div>
     </>
   );
