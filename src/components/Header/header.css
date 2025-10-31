@@ -28,23 +28,3 @@
 .header-container:hover .items-menu {
   opacity: 1;
 }
-
-span.links-header {
-  position: relative;
-}
-
-.links-header::after {
-  position: absolute;
-  top: 35px;
-  left: 0;
-  content: "";
-  height: 2px;
-  display: inline-block;
-  width: 0%;
-  background-color: var(--accent);
-  transition: width 180ms ease-in-out;
-}
-.links-header:hover::after,
-.links-header:focus-visible::after {
-  width: 100%;
-}

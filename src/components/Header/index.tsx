@@ -2,37 +2,33 @@ import Links from "./components/links";
 import "./header.css";
 import github from "../../assets/icons/github.svg";
 import linkedin from "../../assets/icons/linkedin.svg";
-import dark from "../../assets/icons/dark.svg";
-import light from "../../assets/icons/light.svg";
+import mail from "../../assets/icons/mail.svg";
 import { GithubPerfil, LinkedinPerfil } from "../../assets/links";
 
 const Header = () => {
   return (
-    <div className="header-container   ">
+    <div className="header-container">
       <nav>
-        <ul className="container-menu glass px-6 lg:px-16 h-20 text-white grid lg:grid-cols-3 items-center ">
-          <li className="items-menu items-menu">
-            <div className=" flex items-center opacity-90 justify-center xl:justify-start gap-4 lg:gap-10 text-2xl font-light">
+        <ul className="container-menu glass w-full px-4 sm:px-6 lg:px-16 h-auto md:h-20 py-3 md:py-0 text-white grid grid-cols-1 md:grid-cols-3 items-center gap-2">
+          <li className="items-menu items-menu order-2 md:order-1">
+            <div className="flex flex-wrap items-center opacity-90 justify-center md:justify-start gap-3 sm:gap-4 lg:gap-10 text-base sm:text-lg lg:text-2xl font-light">
               <Links name="Sobre mim" href="#Sobre" />
               <Links name="Projetos" href="#Projetos" />
               <Links name="Contato" href="#Contato" />
             </div>
           </li>
-          <li className="title-header text-center  text-4xl font-light ">
+          <li className="title-header order-1 md:order-2 text-center text-2xl sm:text-3xl lg:text-4xl font-light">
             Emanuel Bitencourt
           </li>
-          <li
-            className="items-menu
-items-menu"
-          >
-            <div className=" flex items-center justify-center xl:justify-end opacity-90 gap-4 lg:gap-10 text-2xl font-light">
-              {localStorage.theme === "light" ? (
-                <Links name="Tema Dark" image={dark} />
-              ) : (
-                <Links name="Tema Light" image={light} />
-              )}
+          <li className="items-menu items-menu order-3 md:order-3">
+            <div className="flex flex-wrap items-center justify-center md:justify-end opacity-90 gap-3 sm:gap-4 lg:gap-10 text-base sm:text-lg lg:text-2xl font-light">
               <Links name="Github" href={GithubPerfil} image={github} />
               <Links name="Linkedin" href={LinkedinPerfil} image={linkedin} />
+              <Links
+                name="Email"
+                href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=emanuelmagalhaes3m@gmail.com"
+                image={mail}
+              />
             </div>
           </li>
         </ul>
