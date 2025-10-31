@@ -1,0 +1,120 @@
+.projects-section {
+  width: 100%;
+  padding: 6rem 1.5rem;
+  background: linear-gradient(
+    135deg,
+    #0b0b0c 0%,
+    #151520 25%,
+    #0f0f14 50%,
+    #151520 75%,
+    #0b0b0c 100%
+  );
+  position: relative;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(96, 165, 250, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+@media (prefers-color-scheme: light) {
+  .projects-section {
+    background: linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f5f5f5 25%,
+      #fafafa 50%,
+      #f5f5f5 75%,
+      #ffffff 100%
+    );
+  }
+
+  .projects-section::after {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(37, 99, 235, 0.2) 50%,
+      transparent 100%
+    );
+  }
+}
+
+.projects-section--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--fg, #f5f5f5);
+  margin: 0 0 1rem 0;
+}
+
+.projects-subtitle {
+  font-size: 1.125rem;
+  color: var(--muted, #a1a1aa);
+  margin: 0;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projects-section {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-section {
+    padding: 8rem 3rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
