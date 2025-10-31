@@ -1,7 +1,7 @@
 import React from "react";
 import "./projects.css";
 import ProjectCard from "./components/ProjectCard";
-import ProjectModal from "./components/ProjectCard";
+import ProjectModal from "./components/ProjectModal";
 
 export interface Project {
   id: number;
