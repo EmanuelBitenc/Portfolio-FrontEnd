@@ -152,6 +152,13 @@ const Skills = () => {
       id="skills-section"
       className={`skills-section ${isVisible ? "skills-section--visible" : ""}`}
     >
+      <div className="mb-10 mx-5">
+        <h2 className=" text-center text-xl lg:text-3xl text-[color:var(--accent)]">
+          Atuando com foco em qualidade de código e entregas responsáveis,
+          gerando valor ao projeto e ao cliente.
+        </h2>
+      </div>
+
       <div className="skills-container">
         <div className="skills-toggle">
           <button

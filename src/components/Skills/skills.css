@@ -62,7 +62,6 @@
   margin: 0 auto;
 }
 
-/* Toggle */
 .skills-toggle {
   display: flex;
   justify-content: center;
@@ -100,7 +99,6 @@
   color: var(--fg, #f5f5f5);
 }
 
-/* Content */
 .skills-content {
   min-height: 400px;
 }
@@ -120,7 +118,6 @@
   }
 }
 
-/* experiencia Content */
 .experiencia-content {
   display: grid;
   grid-template-columns: 1fr;

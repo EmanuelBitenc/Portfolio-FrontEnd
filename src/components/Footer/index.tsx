@@ -6,22 +6,21 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-section footer-brand">
             <h3 className="footer-brand-title">
-              <span className="footer-logo">›_</span> EB.
+              <span className="footer-logo"></span> EmanuelBitenc.
             </h3>
             <p className="footer-brand-description">
-              Criando experiências digitais que ultrapassam limites. De
-              arquiteturas escaláveis a soluções inovadoras, transformo desafios
-              complexos em código elegante.
+              Atuando com foco em qualidade de código e entregas responsáveis,
+              gerando valor ao projeto e ao cliente.
             </p>
           </div>
 
           <div className="footer-section">
-            <h4 className="footer-section-title">Quick Links</h4>
+            <h4 className="footer-section-title">Links</h4>
             <ul className="footer-links">
               <li>
                 <a href="#" className="footer-link">
@@ -29,24 +28,24 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#about-section" className="footer-link">
-                  About
+                <a href="#skills-section" className="footer-link">
+                  Experiencias
                 </a>
               </li>
               <li>
                 <a href="#projects-section" className="footer-link">
-                  Projects
+                  Projetos
                 </a>
               </li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h4 className="footer-section-title">Connect</h4>
+            <h4 className="footer-section-title">Contatos</h4>
             <ul className="footer-social">
               <li>
                 <a
-                  href="https://linkedin.com/in/emanuellbitencourt"
+                  href="https://www.linkedin.com/in/emanuelbitencourt/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-social-link"
@@ -111,9 +110,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p className="footer-copyright">
             © {new Date().getFullYear()} Emanuel Bitencourt •{" "}
-            <span className="footer-role">
-              Senior Full-Stack Developer & CTO
-            </span>
+            <span className="footer-role">Desenvolvedor de software</span>
           </p>
           <button className="footer-back-to-top" onClick={scrollToTop}>
             Back to top

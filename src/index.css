@@ -39,6 +39,10 @@
     min-height: 100%;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     min-width: 320px;
     min-height: 100vh;
@@ -88,4 +92,10 @@ span.links-button {
 .links-button:hover::after,
 .links-button:focus-visible::after {
   width: 100%;
+}
+
+#skills-section,
+#projects-section,
+#footer {
+  scroll-margin-top: -100px;
 }

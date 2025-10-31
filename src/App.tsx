@@ -4,7 +4,7 @@ import HeaderPanel from "./components/Header-Panel";
 //import About from "./components/About";
 import Skills from "./components/Skills";
 //import Projects from "./components/Projects";
-//import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
         </div>
         {/**<About /> */}
         <Skills />
-        {/**<Projects />
-        <Footer /> */}
+        {/**<Projects />*/}
+        <Footer />
       </div>
     </>
   );
