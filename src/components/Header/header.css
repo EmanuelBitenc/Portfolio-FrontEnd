@@ -1,15 +1,19 @@
 .container-menu {
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.8s;
+  background: transparent;
+  transition: background 250ms ease, border-color 250ms ease,
+    box-shadow 250ms ease;
 }
 
 .container-menu li:not(.title-header) {
-  opacity: 0.5;
-  transition: opacity 0.8s;
+  opacity: 0.8;
+  transition: opacity 250ms ease;
 }
 
 .header-container:hover .container-menu {
-  background: #000000;
+  background: color-mix(in oklab, var(--overlay) 70%, transparent);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border: 1px solid var(--border);
 }
 
 .header-container:hover .container-menu li.items-menu {
@@ -17,8 +21,8 @@
 }
 
 .items-menu {
-  opacity: 0.5;
-  transition: opacity 0.8s;
+  opacity: 0.85;
+  transition: opacity 250ms ease;
 }
 
 .header-container:hover .items-menu {
@@ -37,9 +41,10 @@ span.links-header {
   height: 2px;
   display: inline-block;
   width: 0%;
-  background-color: #fff;
-  transition: width 0.3s ease-in-out;
+  background-color: var(--accent);
+  transition: width 180ms ease-in-out;
 }
-.links-header:hover::after {
+.links-header:hover::after,
+.links-header:focus-visible::after {
   width: 100%;
 }

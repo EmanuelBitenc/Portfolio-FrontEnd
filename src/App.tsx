@@ -10,6 +10,7 @@ function App() {
           <Header />
           <HeaderPanel />
         </div>
+        <div className="w-full h-60 bg-zinc-100">continuação</div>
       </div>
     </>
   );

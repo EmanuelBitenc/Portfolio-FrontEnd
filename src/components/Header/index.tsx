@@ -10,11 +10,8 @@ const Header = () => {
   return (
     <div className="header-container   ">
       <nav>
-        <ul className="container-menu px-16 h-20 text-white grid lg:grid-cols-3 items-center ">
-          <li
-            className="items-menu
-items-menu"
-          >
+        <ul className="container-menu glass px-6 lg:px-16 h-20 text-white grid lg:grid-cols-3 items-center ">
+          <li className="items-menu items-menu">
             <div className=" flex items-center opacity-90 justify-center xl:justify-start gap-4 lg:gap-10 text-2xl font-light">
               <Links name="Sobre mim" href="#Sobre" />
               <Links name="Projetos" href="#Projetos" />
