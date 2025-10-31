@@ -28,3 +28,8 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.span-contrast {
+  font-weight: 500;
+  color: var(--accent);
+}

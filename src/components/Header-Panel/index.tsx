@@ -6,30 +6,6 @@ import ItemsButton from "./components/items-button";
 import { LinkedinPerfil, GithubPerfil, curriculo } from "../../assets/links";
 import React from "react";
 
-const jobs = [
-  {
-    id: 1,
-    periodo: "Jun de 2022 - Atual",
-    cargo: "Desenvolvedor de software Front End",
-    local: "DNIT - Departamento Nacional de  Infraestrutura de Transportes",
-    info2: "STE - Serviços Técnicos de Engenharia S/A.",
-  },
-  {
-    id: 2,
-    periodo: "",
-    cargo: "Desenvolvedor de software Front End",
-    local: "DNIT - Departamento Nacional de  Infraestrutura de Transportes",
-    info2: "ENGEFOTO Engenharia e Aerolevantamentos Ltda.",
-  },
-  {
-    id: 3,
-    periodo: "",
-    cargo: "Analista de TI",
-    local: "DNIT - Departamento Nacional de  Infraestrutura de Transportes",
-    info2: "STE - Serviços Técnicos de Engenharia S/A.",
-  },
-];
-
 const HeaderPanel = () => {
   const [isVisible, setIsVisible] = React.useState(false);
   React.useEffect(() => {
@@ -40,52 +16,52 @@ const HeaderPanel = () => {
   }, []);
 
   return (
-    <section className="px-36 grid grid-cols-2 gap-5 h-[695px] items-center">
-      <div
+    <section className="px-6 sm:px-8 md:px-12 lg:px-24 xl:px-36 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 h-auto md:h-[695px] items-center">
+      <section
         className={`HeaderPanel${
           isVisible ? " HeaderPanel--visible" : ""
-        } grid grid-cols-1 gap-5`}
+        } justify-self-center md:justify-self-end`}
       >
-        {jobs
-          .sort((a, b) => a.local.localeCompare(b.local))
-          .map((a, i, arr) => {
-            const isNewGroup = i === 0 || a.local !== arr[i - 1].local;
-            return (
-              <div key={a.id}>
-                {isNewGroup && (
-                  <h2 className="text-2xl font-light  text-[#E0E0E0]">
-                    {a.periodo}
-                  </h2>
-                )}
-
-                <div className="ml-10">
-                  <h3 className="text-4xl font-semibold">{a.cargo}</h3>
-                  <p className="text-2xl font-light text-[#E0E0E0]">
-                    {a.local}
-                  </p>
-                  <p className="text-2xl font-light text-[#E0E0E0]">
-                    {a.info2}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-      </div>
-      <div
-        className={`HeaderPanel${
-          isVisible ? " HeaderPanel--visible" : ""
-        } justify-self-end`}
-      >
-        <div className="text-start font-light text-6xl leading-[70px]">
+        <div className="text-start font-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-[70px]">
           <h1>Desenvolvedor de Software</h1> <h1> Criador de Soluções Web</h1>
           <h1>Analista de sistemas</h1>
         </div>
-        <div className="flex gap-10 items-center mt-5">
+        <div className="flex flex-wrap gap-4 sm:gap-6 md:gap-8 lg:gap-10 items-center mt-5">
           <ItemsButton name="Curriculo" href={curriculo} img={download} />
           <ItemsButton name="Linkedin" href={LinkedinPerfil} img={linkedin} />
           <ItemsButton name="GitHub" href={GithubPerfil} img={github} />
         </div>
-      </div>
+      </section>
+      <section
+        className={`text-base sm:text-lg md:text-2xl font-light text-[#E0E0E0] HeaderPanel${
+          isVisible ? " HeaderPanel--visible" : ""
+        } grid grid-cols-1 gap-5`}
+      >
+        <p>
+          <span className="span-contrast">
+            Desenvolvedor de Softwarecom 4 anos de experiência
+          </span>{" "}
+          , especializado em javascript, front-end e integração de sistemas .
+          Atuação abrangente em todo o ciclo de desenvolvimento de software,
+          participando ativamente desde a análise de requisitos e design de
+          interfaces até a entrega técnica.
+        </p>
+        <p>
+          Experiência adicional como{" "}
+          <span className="span-contrast">
+            Analista de Software/Product Owner e Designer de Interface
+          </span>
+          . Forte atuação em equipes ágeis, com aplicação consistente do SCRUM.
+          Comprometido com a entrega de software de qualidade, com foco na
+          resolução de problemas e melhoria contínua de processos e produtos.
+        </p>
+        <p>
+          {" "}
+          <span className="span-contrast">Pós-Graduado</span> em{" "}
+          <span className="span-contrast">Engenharia de Software pela USP</span>{" "}
+          e formado em ADS pela Faculdade Senac DF.{" "}
+        </p>
+      </section>
     </section>
   );
 };
