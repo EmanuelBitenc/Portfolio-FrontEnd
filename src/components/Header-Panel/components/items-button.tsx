@@ -10,7 +10,7 @@ const ItemsButton: React.FC<ItemsButtonProps> = ({ img, name, href }) => {
       <a
         href={href}
         target="_blank"
-        className="links-button flex gap-1 text-xl "
+        className="links-button flex gap-1 sm:text-xl "
       >
         <img src={img} width={"20px"} alt={name} />
         {name}

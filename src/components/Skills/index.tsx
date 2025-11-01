@@ -39,7 +39,7 @@ const skillsData = {
 
 const statsData = [
   { icon: "📈", value: "4+", label: "Anos de experiência" },
-  { icon: "👥", value: "6+", label: "Colaboradores em Equipe" },
+  { icon: "👥", value: "6+", label: "Membros em Equipe" },
   { icon: "🚀", value: "6+", label: "Projetos Trabalhado" },
   { icon: "💻", value: "∞", label: "Lines of Code" },
 ];
