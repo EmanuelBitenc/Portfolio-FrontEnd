@@ -30,7 +30,7 @@ const skillsData = {
   Gerenciamento: [
     "Metodologia SCRUM",
     "Kanban",
-    "Analise de requisitos",
+    "Análise de requisitos",
     "Gestão Ágil",
     "Liderança e Comunicação",
     "Modelagem UML",
@@ -40,7 +40,7 @@ const skillsData = {
 const statsData = [
   { icon: "📈", value: "4+", label: "Anos de experiência" },
   { icon: "👥", value: "6+", label: "Membros em Equipe" },
-  { icon: "🚀", value: "6+", label: "Projetos Trabalhado" },
+  { icon: "🚀", value: "6+", label: "Projetos Trabalhados" },
   { icon: "💻", value: "∞", label: "Lines of Code" },
 ];
 
@@ -64,7 +64,7 @@ const experiencesData = [
       "Cypress.js",
     ],
     tags: [
-      "Gorvenamental",
+      "Governamental",
       "Testes E2E",
       "Gerenciamento de estados",
       "Integração APIs RESTful",
@@ -82,7 +82,7 @@ const experiencesData = [
       "Sistema de Gerenciamento de Estruturas, Sistema de Gerenciamento de Pavimentos",
     techs: ["React.js", "Typescript", "Chakra.UI", "Bibliotecas React"],
     tags: [
-      "Gorvenamental",
+      "Governamental",
       "Gerenciamento de estados",
       "Integração APIs RESTful",
       "300+ Usuários",
@@ -97,11 +97,11 @@ const experiencesData = [
     action: "Gerenciei e conduzi os projetos: ",
     description:
       "Sistema de Gerenciamento de Pavimento e Estudo de Viabilidade Técnica, Econômica e Ambiental de Rodovias",
-    techs: ["Análista", "Figma", "SCRUM", "Kanban", "UI/UX"],
+    techs: ["Analista", "Figma", "SCRUM", "Kanban", "UI/UX"],
     tags: [
-      "Gorvenamental",
+      "Governamental",
       "Gerenciamento",
-      "Análista",
+      "Analista",
       "Product Owner",
       "2+ Projetos",
       "UI Design",
@@ -112,7 +112,7 @@ const experiencesData = [
     yearEnd: "2021",
     role: "Desenvolvedor de Software ",
     company: "Faculdade Senac - DF ",
-    action: "Colaboraçõ com a equipe no desenvolvimento: ",
+    action: "Colaboração com a equipe no desenvolvimento: ",
     contract: "Estágio",
     description:
       "Sistema de Inscrição de Eventos, Portal do Aluno e o Sistema de Gerenciamento de Disciplinas",
