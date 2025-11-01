@@ -16,17 +16,18 @@ const HeaderPanel = () => {
   }, []);
 
   return (
-    <section className="px-6 sm:px-8 md:px-12 lg:px-24 xl:px-36 grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-10 h-auto md:h-[695px] items-center">
+    <section className="px-6 sm:px-8 md:px-12 lg:px-24 xl:px-36 grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-10 h-auto md:h-[695px] ">
       <section
         className={`my-4 HeaderPanel${
           isVisible ? " HeaderPanel--visible" : ""
-        } justify-self-center xl:justify-self-end`}
+        } justify-self-center xl:justify-self-end self-center`}
       >
-        <div className="text-start font-light text-4xl md:text-5xl lg:text-5xl xl:text-5xl   2xl:text-6xl leading-tight md:leading-[70px] ">
-          <h1>Desenvolvedor de Software</h1> <h1> Criador de Soluções Web</h1>
-          <h1>Analista de sistemas</h1>
+        <div className=" font-light text-4xl md:text-5xl lg:text-5xl xl:text-5xl   2xl:text-6xl leading-tight md:leading-[70px]  text-center sm:text-start">
+          <h1 className="mb-4 sm:mb-0">Desenvolvedor de Software</h1>{" "}
+          <h1 className="mb-4 sm:mb-0"> Criador de Soluções Web</h1>
+          <h1 className="mb-4 sm:mb-0">Analista de sistemas</h1>
         </div>
-        <div className="flex flex-wrap gap-4 sm:gap-6 md:gap-8 lg:gap-10 items-center mt-5">
+        <div className="flex flex-wrap gap-4 sm:gap-6 md:gap-8 lg:gap-10 mt-5 justify-center sm:justify-start">
           <ItemsButton name="Curriculo" href={curriculo} img={download} />
           <ItemsButton name="Linkedin" href={LinkedinPerfil} img={linkedin} />
           <ItemsButton name="GitHub" href={GithubPerfil} img={github} />
