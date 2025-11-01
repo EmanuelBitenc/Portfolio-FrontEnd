@@ -83,7 +83,6 @@ const experiencesData = [
     techs: ["React.js", "Typescript", "Chakra.UI", "Bibliotecas React"],
     tags: [
       "Gorvenamental",
-      "Testes E2E",
       "Gerenciamento de estados",
       "Integração APIs RESTful",
       "300+ Usuários",
@@ -111,13 +110,19 @@ const experiencesData = [
   {
     yearStart: "2020",
     yearEnd: "2021",
-    role: "Desenvolvedor de Software - Estágio",
+    role: "Desenvolvedor de Software ",
     company: "Faculdade Senac - DF ",
     action: "Colaboraçõ com a equipe no desenvolvimento: ",
+    contract: "Estágio",
     description:
       "Sistema de Inscrição de Eventos, Portal do Aluno e o Sistema de Gerenciamento de Disciplinas",
     techs: ["React.js", "HTML", "CSS", "Bootstrap", "Javascript"],
-    tags: ["Estágio", "Correção de Bugs", "Institucional", "200+ Usuários"],
+    tags: [
+      "Institucional",
+      "Correção de Bugs",
+      "Desenvolvimento de tela",
+      "200+ Usuários",
+    ],
   },
 ];
 
@@ -188,7 +193,8 @@ const Skills = () => {
                   </span>
                   <div className="flex items-center  gap-3">
                     <h3 className="experiencia-title">{experience.company}</h3>
-                    <h2 className="experiencia-contract">
+                    <span> • </span>
+                    <h2 className="experiencia-contract text-sm sm:text-lg">
                       {experience.contract}
                     </h2>
                   </div>
@@ -199,7 +205,7 @@ const Skills = () => {
                         <span key={techIndex}>{tech}, </span>
                       ))}
                   </p>
-                  <p className="experiencia-description">
+                  <p className="experiencia-description sm:text-lg">
                     <span>{experience.action}</span>
                     {experience.description}
                   </p>

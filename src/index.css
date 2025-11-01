@@ -11,7 +11,6 @@
     --ring: rgba(96, 165, 250, 0.35);
   }
 
-  /* System light-mode fallback */
   @media (prefers-color-scheme: light) {
     :root {
       --bg: #ffffff;
@@ -67,7 +66,13 @@
     ),
     url("/src/assets/images/containerHeaderImg-reverse.png");
   background-size: cover;
-  background-position: center;
+  background-position: left center;
+}
+
+@media (min-width: 1024px) {
+  .container-header-img {
+    background-position: center;
+  }
 }
 
 div {

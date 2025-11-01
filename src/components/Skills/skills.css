@@ -155,7 +155,6 @@
 }
 
 .experiencia-contract {
-  font-size: 1.125rem;
   margin: 0.5rem 0 0.2rem 0;
 }
 
@@ -167,7 +166,6 @@
 }
 
 .experiencia-description {
-  font-size: 1.125rem;
   line-height: 1.6;
   color: var(--muted, #a1a1aa);
   margin: 1rem 0;
@@ -189,7 +187,6 @@
   font-weight: 500;
 }
 
-/* Skills Grid */
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -197,7 +194,6 @@
   margin-bottom: 4rem;
 }
 
-/* Stats Grid */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
