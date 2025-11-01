@@ -16,7 +16,7 @@ const HeaderPanel = () => {
   }, []);
 
   return (
-    <section className="px-6 sm:px-8 md:px-12 lg:px-24 xl:px-36 grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-10 h-auto md:h-[695px] ">
+    <section className="px-6 sm:px-8 md:px-12 lg:px-24 xl:px-36 grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-10 h-auto md:h-[695px] items-center">
       <section
         className={`my-4 HeaderPanel${
           isVisible ? " HeaderPanel--visible" : ""
