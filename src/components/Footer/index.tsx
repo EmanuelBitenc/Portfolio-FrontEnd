@@ -24,7 +24,7 @@ const Footer = () => {
             <ul className="footer-links">
               <li>
                 <a href="#" className="footer-link">
-                  Home
+                  Início
                 </a>
               </li>
               <li>
@@ -113,7 +113,7 @@ const Footer = () => {
             <span className="footer-role">Desenvolvedor de software</span>
           </p>
           <button className="footer-back-to-top" onClick={scrollToTop}>
-            Back to top
+            Voltar ao topo
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

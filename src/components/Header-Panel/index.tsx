@@ -42,7 +42,7 @@ const HeaderPanel = () => {
           <span className="span-contrast">
             Desenvolvedor de Software com 4 anos de experiência
           </span>{" "}
-          , especializado em javascript, front-end e integração de sistemas .
+          , especializado em javascript, front-end e integração de sistemas.
           Atuação abrangente em todo o ciclo de desenvolvimento de software,
           participando ativamente desde a análise de requisitos e design de
           interfaces até a entrega técnica.
