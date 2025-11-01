@@ -1,5 +1,5 @@
 import React from "react";
-import type { Project } from "../index";
+import type { Project } from "../data/dataProjects";
 import "./project-card.css";
 
 interface ProjectCardProps {
