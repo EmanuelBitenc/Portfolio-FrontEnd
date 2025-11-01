@@ -53,7 +53,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
         </button>
 
         <div className="modal-content">
-          <div className="modal-header">
+          <div className="modal-header sm:flex inline-block">
             <div className="modal-logo">{project.name.charAt(0)}</div>
             <div className="modal-header-info">
               <h2 className="modal-title text-lg md:text-3xl">
@@ -66,7 +66,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                   href={`${project.website}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="modal-website"
+                  className="modal-website "
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                     <line x1="2" y1="12" x2="22" y2="12" />
                     <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                   </svg>
-                  {project.website}
+                  <p className="text-sm md:text-base">{project.website}</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
@@ -101,12 +101,14 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                   </svg>
                 </a>
               )}{" "}
-              <p>
-                Repositório:{" "}
-                <a className="text-[var(--accent)]" href={project.repository}>
-                  {project.repository}
-                </a>
-              </p>
+              {project.repository && (
+                <p className="text-sm md:text-base">
+                  Repositório:{" "}
+                  <a className="text-[var(--accent)]" href={project.repository}>
+                    {project.repository}
+                  </a>
+                </p>
+              )}
             </div>
           </div>
 

@@ -88,7 +88,7 @@ const projectsData: Project[] = [
     website: "AnimaSancta.com.br",
     repository: "https://github.com/EmanuelBitenc/AnimaSancta",
     description:
-      "Projeto próprio, full stack da aplicação Anima Sancta, utilizando o ecossistema moderno () para garantir alta performance e escalabilidade. Sua expertise técnica abrangeu desde a implementação de funcionalidades críticas, como a geração client-side de documentos PDF (jsPDF), até a gestão completa do ciclo de vida do software, incluindo a automação de deploy via Vercel, administração de domínios (DNS) e otimização de desempenho e SEO (Google Search Console/Analytics).",
+      "Atuação Full Stack no desenvolvimento do projeto Anima Sancta, utilizando um stack moderno para garantir performance e escalabilidade. As responsabilidades incluíram a implementação de funcionalidades como a geração de PDF client-side (jsPDF) e a gestão completa do ciclo de vida, cobrindo o deploy automatizado via Vercel, administração de domínio (DNS) e otimização de desempenho e SEO.",
     tagline:
       "Ferramenta de apoio espiritual, oferecendo aos fiéis católicos um guia detalhado para a prática do Exame de Consciência e facilitando o preparo para o sacramento da confissão, incluindo a geração de documentos PDF organizados.",
     technologies: [
