@@ -45,15 +45,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
             </span>
           ))}
         </div>
-
-        <div className="project-card-metrics">
-          {project.metrics.map((metric, index) => (
-            <div key={index} className="project-metric">
-              <span className="metric-value">{metric.value}</span>
-              <span className="metric-label">{metric.label}</span>
-            </div>
-          ))}
-        </div>
       </div>
 
       <div className="project-card-footer">
