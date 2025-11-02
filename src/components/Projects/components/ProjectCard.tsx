@@ -9,7 +9,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
   return (
-    <div className="project-card" onClick={onClick}>
+    <div className="project-card cursor-pointer" onClick={onClick}>
       <div className="project-card-header">
         <div className="project-card-logo">{project.name.charAt(0)}</div>
         <span className="project-card-period">{project.period}</span>
