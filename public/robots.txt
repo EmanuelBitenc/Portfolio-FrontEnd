@@ -1,0 +1,5 @@
+# robots.txt for https://emanuelbitencourt.com.br/
+User-agent: *
+Allow: /
+
+Sitemap: https://emanuelbitencourt.com.br/sitemap.xml
