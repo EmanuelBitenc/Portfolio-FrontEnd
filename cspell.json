@@ -4,12 +4,14 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
+        "Avenir",
         "Bikcraft",
         "Chakra",
         "DNIT",
         "Namorinho",
         "Origamid",
-        "Shadcn"
+        "Shadcn",
+        "tailwindcss"
     ],
     "ignoreWords": [],
     "import": []

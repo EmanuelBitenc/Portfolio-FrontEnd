@@ -25,21 +25,6 @@
   );
 }
 
-@media (prefers-color-scheme: light) {
-  .about-section {
-    background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 50%, #ffffff 100%);
-  }
-
-  .about-section::before {
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(37, 99, 235, 0.2) 50%,
-      transparent 100%
-    );
-  }
-}
-
 .about-section--visible {
   opacity: 1;
   transform: translateY(0);

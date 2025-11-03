@@ -32,28 +32,6 @@
   );
 }
 
-@media (prefers-color-scheme: light) {
-  .projects-section {
-    background: linear-gradient(
-      135deg,
-      #ffffff 0%,
-      #f5f5f5 25%,
-      #fafafa 50%,
-      #f5f5f5 75%,
-      #ffffff 100%
-    );
-  }
-
-  .projects-section::after {
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(37, 99, 235, 0.2) 50%,
-      transparent 100%
-    );
-  }
-}
-
 .projects-section--visible {
   opacity: 1;
   transform: translateY(0);
