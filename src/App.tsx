@@ -5,6 +5,7 @@ import HeaderPanel from "./components/Header-Panel";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Projects />
         <Footer />
       </div>
+      <Analytics />
     </>
   );
 }

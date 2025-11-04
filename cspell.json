@@ -7,13 +7,16 @@
         "Avenir",
         "Bikcraft",
         "Chakra",
+        "changefreq",
         "DNIT",
         "ENGEFOTO",
+        "lastmod",
         "Ltda",
         "Namorinho",
         "Origamid",
         "Shadcn",
-        "tailwindcss"
+        "tailwindcss",
+        "urlset"
     ],
     "ignoreWords": [],
     "import": []
