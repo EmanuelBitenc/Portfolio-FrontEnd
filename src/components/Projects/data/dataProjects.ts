@@ -2,7 +2,7 @@ export interface Project {
   id: number;
   name: string;
   website?: string;
-  description: string;
+  description: string[];
   tagline: string;
   technologies: string[];
   images: string[];
@@ -15,8 +15,12 @@ const projectsData: Project[] = [
     id: 1,
     name: "Sistema de Gerenciamento de Pavimentos - SGP",
     website: "DNIT",
-    description:
-      "Atuei na implementação e desenvolvimento. Projeto responsável por gerenciar a malha viária do país, a exportação de relatórios e a importação de dados, além de realizar análises de riscos e de qualidade do pavimento. Tive participação, também, como Analista de Requisitos, na gestão das tarefas (Product Owner) dentro das sprints Scrum, e como UI Designer no desenvolvimento dos protótipos utilizando o Figma",
+    description: [
+      "Atuei na implementação e desenvolvimento do SGP (Sistema de Gestão de Projetos), solução voltada à gestão centralizada de portfólios, projetos e demandas em ambientes institucionais e corporativos. O projeto tem como foco o gerenciamento da malha viária nacional, abrangendo exportação de relatórios, importação de dados, e a realização de análises de risco e de qualidade do pavimento.",
+      " O sistema permite o cadastro e acompanhamento de escopos, cronogramas, custos, contratos e recursos humanos, consolidando dados de desempenho por meio de dashboards e relatórios técnicos. Implementei módulos de gestão contratual, controle de medições e fiscalização, repositório documental, além de integrações com sistemas externos via APIs e coleta de dados por formulários e importadores de bases.",
+      " O SGP também automatiza notificações, versionamento de documentos, auditoria de ações e geração de relatórios gerenciais e operacionais, otimizando fluxos de trabalho e garantindo rastreabilidade.",
+      " Além do desenvolvimento, atuei como Analista de Requisitos, conduzindo a gestão das tarefas como Product Owner dentro das sprints Scrum, e como UI Designer, sendo responsável pela criação de protótipos e interfaces no Figma. O SGP promove eficiência, transparência e conformidade, reduzindo retrabalho, aprimorando o controle de custos e prazos e garantindo padronização e governança em todo o ciclo de vida dos projetos de infraestrutura.",
+    ],
     tagline:
       "Sistema de Gerenciamento de Pavimento do país, concebido para automatizar a importação de dados, gerar relatórios gerenciais, e subsidiar a tomada de decisão através da análise de riscos e qualidade do pavimento.",
     technologies: [
@@ -38,8 +42,12 @@ const projectsData: Project[] = [
     id: 2,
     name: "Sistema de Gerenciamento de Estruturas - SGE",
     website: "DNIT",
-    description:
-      "Neste projeto de Gerenciamento de Obras de Arte Especiais (OAE), atuei como Desenvolvedor. Fui responsável pela implementação de APIs RESTful, gerenciamento de estado e integrações de bibliotecas utilizando React.js e TypeScript. Além disso, desenvolvi testes automatizados end-to-end (E2E) e participei ativamente no processo de deploy e correções do projeto.",
+    description: [
+      "Atuei no desenvolvimento do SGE (Sistema de Gestão de Estruturas), responsável pela gestão nacional das estruturas sob supervisão do DNIT (Departamento Nacional de Infraestrutura de Transportes). O sistema foi projetado para o Gerenciamento de Obras de Arte Especiais (OAE), realizando o processamento e integração de centenas de dados sensíveis e de grande impacto, aplicando cálculos e fórmulas de engenharia para gerar relatórios técnicos de status, saúde estrutural e necessidades de manutenção.",
+      "Participei da implementação de módulos de gestão contratual, fiscalização, avaliações e medições, além de repositório interno de documentos. O sistema também contempla coleta de dados via formulários e importação de bases externas para integração e análises estruturais.",
+      " Como Desenvolvedor, fui responsável pela implementação de APIs RESTful, gerenciamento de estado e integração de bibliotecas utilizando React.js e TypeScript. Também desenvolvi testes automatizados end-to-end (E2E) e atuei diretamente nos processos de deploy e correções do projeto.",
+      "O SGE tem como objetivo centralizar informações críticas, padronizar processos técnicos e apoiar a tomada de decisões estratégicas, fortalecendo a governança e eficiência na gestão das estruturas de transporte em todo o território nacional.",
+    ],
     tagline:
       "Solução de Gerenciamento de Obras de Arte Especiais (OAE) do DNIT, centralizando a importação e exportação de dados e subsidiando a gestão estratégica de ativos com foco em análise de riscos e qualidade estrutural.",
     technologies: [
@@ -63,8 +71,11 @@ const projectsData: Project[] = [
     id: 3,
     name: "Aceite de Usuários - DPP",
     website: "DNIT",
-    description:
-      "Desenvolvimento do sistema de Aceite de Usuários para o Departamento Nacional de Infraestrutura de Transportes (DNIT). Atuei como Desenvolvedor Front-end, utilizando React.js, Shadcn e TypeScript para implementar funcionalidades essenciais, garantir a integração com APIs RESTful e assegurar a qualidade do código através de testes automatizados.",
+    description: [
+      "Atuei na implementação e desenvolvimento do sistema 'Controle de Usuários', solução voltada ao gerenciamento do processo de validação de cadastros no departamento DPP - DNIT. O projeto centraliza o fluxo de aprovação de usuários que se cadastram nos projetos GE e SGP, exigindo validação na plataforma por um responsável antes da ativação da conta.",
+      "O sistema permite o registro de solicitações de cadastro, a apresentação das informações do solicitante aos responsáveis, a decisão de aceite ou negação do cadastro e a comunicação do resultado ao usuário. A plataforma organiza uma fila de validações, mantém registro da decisão de cada responsável e assegura que somente usuários validados tenham acesso aos projetos GE e SGP.",
+      "Implementei o fluxo de validação e as interfaces para responsáveis efetuarem aceite ou recusa, além da notificação aos solicitantes sobre o status do cadastro. O sistema promove controle de acesso, reduz riscos de contas indevidas e centraliza a governança sobre aprovações de usuários no âmbito do DPP - DNIT.",
+    ],
     tagline:
       "Sistema de Aceite de Usuários desenvolvido para o DNIT, facilitando a validação e aprovação de funcionalidades por parte dos usuários finais, assegurando a conformidade com os requisitos estabelecidos.",
     technologies: [
@@ -87,8 +98,10 @@ const projectsData: Project[] = [
     name: "Anima Sancta",
     website: "AnimaSancta.com.br",
     repository: "https://github.com/EmanuelBitenc/AnimaSancta",
-    description:
-      "Atuação Full Stack no desenvolvimento do projeto Anima Sancta, utilizando um stack moderno para garantir performance e escalabilidade. As responsabilidades incluíram a implementação de funcionalidades como a geração de PDF client-side (jsPDF) e a gestão completa do ciclo de vida, cobrindo o deploy automatizado via Vercel, administração de domínio (DNS) e otimização de desempenho e SEO.",
+    description: [
+      "Atuação Full Stack no desenvolvimento do projeto Anima Sancta, utilizando um stack moderno para garantir performance e escalabilidade.",
+      "Implementei funcionalidades como geração de PDFs client-side (jsPDF) e participei de todo o ciclo de vida do projeto, incluindo deploy automatizado na Vercel, administração de domínio (DNS) e otimizações de desempenho e SEO.",
+    ],
     tagline:
       "Ferramenta de apoio espiritual, oferecendo aos fiéis católicos um guia detalhado para a prática do Exame de Consciência e facilitando o preparo para o sacramento da confissão, incluindo a geração de documentos PDF organizados.",
     technologies: [
@@ -115,8 +128,10 @@ const projectsData: Project[] = [
     name: "Namorinho",
     website: "https://namorinho.vercel.app/",
     repository: "https://github.com/EmanuelBitenc/Namorinho",
-    description:
-      "Projeto próprio, front-end. Namorinho foi desenvolvido utilizando o stack Next.js, React, TypeScript e Tailwind CSS. O projeto focou no desenvolvimento front-end. Uma simulação de fluxo de navegação simulada. Infraestrutura de deploy foi realizada utilizando a plataforma Vercel",
+    description: [
+      "Projeto próprio focado no front-end, desenvolvido com Next.js, React, TypeScript e Tailwind CSS.",
+      "O projeto simula fluxos de navegação e geração de mensagens através de links exclusivos; o deploy foi realizado na plataforma Vercel.",
+    ],
     tagline:
       "O Namorinho é uma aplicação web construída com Next.js e Tailwind CSS que permite aos usuários simular o fluxo de navegação em uma plataforma que gera mensagens de amor de forma elegante através de links exclusivos, simulando um fluxo de navegação.",
     technologies: [
@@ -140,8 +155,10 @@ const projectsData: Project[] = [
     name: "Bikcraft - Legacy",
     website: "https://emanuelbitenc.github.io/BikcraftLegacy/",
     repository: "https://github.com/EmanuelBitenc/BikcraftLegacy",
-    description:
-      "Projeto Bikcraft (Curso Origamid) de e-commerce de bicicletas, desenvolvido com foco em HTML5 Semântico, CSS3 Responsivo e Acessibilidade. O trabalho abrangeu desde a prototipação no Figma (UX/UI) até a implementação do código e versionamento Git/GitHub. Tempos depois foi refeito com React.js",
+    description: [
+      "Projeto Bikcraft (Curso Origamid) de e-commerce de bicicletas, com foco em HTML5 semântico, CSS3 responsivo e acessibilidade.",
+      "O trabalho incluiu prototipação no Figma, implementação do código e versionamento no Git/GitHub; posteriormente o projeto foi refeito em React.js.",
+    ],
     tagline:
       "O Bikcraft é um website de e-commerce (projeto do curso Origamid) desenvolvido com HTML5, CSS3, e JavaScript, demonstrando proficiência em Design Responsivo, Acessibilidade e Prototipação (Figma), com o objetivo de simular uma loja de bicicletas elétricas e seguros.",
     technologies: ["HTML", "CSS", "Javascript", "React.js"],
@@ -160,8 +177,10 @@ const projectsData: Project[] = [
     name: "Chuck Norris Jokes",
     website: "https://chuck-norris-page.vercel.app/",
     repository: "https://github.com/EmanuelBitenc/ChuckNorris_Page",
-    description:
-      "Projeto próprio, front-end. Chuck Norris Jokes foi desenvolvido utilizando o stack Next.js, React, TypeScript e Tailwind CSS. O projeto focou no desenvolvimento front-end. Uma simulação de fluxo de navegação simulada. Infraestrutura de deploy foi realizada utilizando a plataforma Vercel",
+    description: [
+      "Projeto próprio focado no front-end, desenvolvido com Next.js, React, TypeScript e Tailwind CSS.",
+      "A aplicação consome a API de piadas do Chuck Norris, oferecendo listagem e filtragem por categoria; o deploy foi feito na Vercel.",
+    ],
     tagline:
       "A plataforma é uma aplicação Javascript que consome a API de piadas do Chuck Norris, oferecendo funcionalidades de listagem detalhada e filtragem de conteúdo por categoria",
     technologies: ["HTML", "CSS", "Javascript", "Consumo de API"],

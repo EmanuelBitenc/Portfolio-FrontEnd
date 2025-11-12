@@ -115,7 +115,11 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           <div className="modal-body">
             <div className="modal-section">
               <h3 className="modal-section-title">Sobre o Projeto</h3>
-              <p className="modal-description">{project.description}</p>
+              {project.description.map((description, index) => (
+                <p key={index} className="modal-description">
+                  {description}
+                </p>
+              ))}
             </div>
 
             <div className="modal-section">
