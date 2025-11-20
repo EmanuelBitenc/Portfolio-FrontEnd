@@ -14,7 +14,8 @@ const projectsData: Project[] = [
   {
     id: 1,
     name: "Nortus - Plataforma de Inteligência para Vendas e Atendimento",
-    website: "https://desafio-loomi-alpha.vercel.app/",
+    website: "https://nortus-project-pi.vercel.app/",
+    repository: "https://github.com/EmanuelBitenc/Nortus-project",
     description: [
       "Desenvolvimento de uma plataforma completa de gestão empresarial com foco em análise de KPIs e gerenciamento de tickets. O projeto implementa um sistema robusto de autenticação com NextAuth.js, incluindo validação de email, opção de visualizar/ocultar senha, funcionalidade 'Lembrar usuário', armazenamento seguro de tokens em cookies e persistência de dados do usuário em localStorage.",
       "Implementei um dashboard interativo de métricas principais (ARPU, Retenção, Churn, Conversão) utilizando ApexCharts para visualizações dinâmicas. A plataforma conta com mapas de clientes por região, mapas de impacto segmentado por tipo, tabelas avançadas com filtros e paginação, além de indicadores de crescimento percentual para análise de tendências.",
