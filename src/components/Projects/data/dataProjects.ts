@@ -13,7 +13,39 @@ export interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    name: "Sistema de Gerenciamento de Pavimentos - SGP",
+    name: "Nortus - Plataforma de Inteligência para Vendas e Atendimento",
+    website: "https://desafio-loomi-alpha.vercel.app/",
+    description: [
+      "Desenvolvimento de uma plataforma completa de gestão empresarial com foco em análise de KPIs e gerenciamento de tickets. O projeto implementa um sistema robusto de autenticação com NextAuth.js, incluindo validação de email, opção de visualizar/ocultar senha, funcionalidade 'Lembrar usuário', armazenamento seguro de tokens em cookies e persistência de dados do usuário em localStorage.",
+      "Implementei um dashboard interativo de métricas principais (ARPU, Retenção, Churn, Conversão) utilizando ApexCharts para visualizações dinâmicas. A plataforma conta com mapas de clientes por região, mapas de impacto segmentado por tipo, tabelas avançadas com filtros e paginação, além de indicadores de crescimento percentual para análise de tendências.",
+      "O sistema de gestão de tickets oferece listagem completa com status e prioridades, filtros por múltiplos critérios (status, prioridade, responsável), resumo visual de tickets (abertos, em andamento, resolvidos) e criação de novos tickets com validação robusta através de React Hook Form e Zod. A interface implementa estados de loading (skeleton) e atualização automática da tabela após criação de tickets.",
+      "O gerenciamento de estado foi implementado com Zustand, garantindo performance e escalabilidade. O projeto segue boas práticas de desenvolvimento com TypeScript, ESLint, Prettier e testes unitários com Vitest, além de consumo de API com Axios e notificações toast com Sonner.",
+    ],
+    tagline:
+      "Sistema desenvolvido para operadores da Nortus durante a jornada de atendimento e recomendação de produtos aos clientes, utilizando inteligência artificial para análise de dados comportamentais e sugestão inteligente de produtos e planos.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "NextAuth.js",
+      "Zustand",
+      "React Hook Form",
+      "Zod",
+      "Axios",
+      "ApexCharts",
+      "Sonner",
+      "Vitest",
+    ],
+    images: [
+      "https://github.com/EmanuelBitenc/ImagesProject/blob/main/desafio/desafio1.png?raw=true",
+      "https://github.com/EmanuelBitenc/ImagesProject/blob/main/desafio/desafio2.png?raw=true",
+      "https://github.com/EmanuelBitenc/ImagesProject/blob/main/desafio/Desafio3.png?raw=true",
+    ],
+    period: "2025",
+  },
+  {
+    id: 2,
+    name: "SGP - Sistema de Gerenciamento de Pavimentos",
     website: "DNIT",
     description: [
       "Atuei na implementação e desenvolvimento do SGP (Sistema de Gestão de Projetos), solução voltada à gestão centralizada de portfólios, projetos e demandas em ambientes institucionais e corporativos. O projeto tem como foco o gerenciamento da malha viária nacional, abrangendo exportação de relatórios, importação de dados, e a realização de análises de risco e de qualidade do pavimento.",
@@ -27,6 +59,9 @@ const projectsData: Project[] = [
       "React.js",
       "Chakra.UI",
       "Typescript",
+      "Zustand",
+      "Zod",
+      "React Hook Form",
       "Desenvolvedor",
       "Front-end",
       "Product Owner",
@@ -39,8 +74,8 @@ const projectsData: Project[] = [
     period: "2022-2025",
   },
   {
-    id: 2,
-    name: "Sistema de Gerenciamento de Estruturas - SGE",
+    id: 3,
+    name: "SGE - Sistema de Gerenciamento de Estruturas",
     website: "DNIT",
     description: [
       "Atuei no desenvolvimento do SGE (Sistema de Gestão de Estruturas), responsável pela gestão nacional das estruturas sob supervisão do DNIT (Departamento Nacional de Infraestrutura de Transportes). O sistema foi projetado para o Gerenciamento de Obras de Arte Especiais (OAE), realizando o processamento e integração de centenas de dados sensíveis e de grande impacto, aplicando cálculos e fórmulas de engenharia para gerar relatórios técnicos de status, saúde estrutural e necessidades de manutenção.",
@@ -54,6 +89,9 @@ const projectsData: Project[] = [
       "React.js",
       "Chakra.UI",
       "Typescript",
+      "Zustand",
+      "Zod",
+      "React Hook Form",
       "Desenvolvedor",
       "Front-end",
       "Testes Automatizados",
@@ -68,8 +106,8 @@ const projectsData: Project[] = [
     period: "2023-2025",
   },
   {
-    id: 3,
-    name: "Aceite de Usuários - DPP",
+    id: 4,
+    name: "DPP - Aceite de Usuários",
     website: "DNIT",
     description: [
       "Atuei na implementação e desenvolvimento do sistema 'Controle de Usuários', solução voltada ao gerenciamento do processo de validação de cadastros no departamento DPP - DNIT. O projeto centraliza o fluxo de aprovação de usuários que se cadastram nos projetos GE e SGP, exigindo validação na plataforma por um responsável antes da ativação da conta.",
@@ -82,6 +120,9 @@ const projectsData: Project[] = [
       "React.js",
       "Shadcn",
       "Typescript",
+      "Zustand",
+      "Zod",
+      "React Hook Form",
       "Desenvolvedor",
       "Front-end",
       "Testes Automatizados",
@@ -94,7 +135,7 @@ const projectsData: Project[] = [
     period: "2025",
   },
   {
-    id: 4,
+    id: 5,
     name: "Anima Sancta",
     website: "AnimaSancta.com.br",
     repository: "https://github.com/EmanuelBitenc/AnimaSancta",
@@ -124,7 +165,7 @@ const projectsData: Project[] = [
     period: "2025",
   },
   {
-    id: 5,
+    id: 6,
     name: "Namorinho",
     website: "https://namorinho.vercel.app/",
     repository: "https://github.com/EmanuelBitenc/Namorinho",
@@ -151,7 +192,7 @@ const projectsData: Project[] = [
     period: "2023",
   },
   {
-    id: 6,
+    id: 7,
     name: "Bikcraft - Legacy",
     website: "https://emanuelbitenc.github.io/BikcraftLegacy/",
     repository: "https://github.com/EmanuelBitenc/BikcraftLegacy",
@@ -173,7 +214,7 @@ const projectsData: Project[] = [
     period: "2021",
   },
   {
-    id: 7,
+    id: 8,
     name: "Chuck Norris Jokes",
     website: "https://chuck-norris-page.vercel.app/",
     repository: "https://github.com/EmanuelBitenc/ChuckNorris_Page",
