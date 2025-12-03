@@ -2,7 +2,6 @@
 
 ## Status do Projeto: Em Desenvolvimento
 
-ps: @robsoncezario, achei fera seu portfolio e usei como base para o meu, vlw, profissional de excelencia!
 
 https://portfolio-front-end-sepia.vercel.app
 
